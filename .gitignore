@@ -1,0 +1,7 @@
+# Git ignore rules for clean deployment
+docx_extracted/
+docx_extracted_3/
+links_extracted/
+links_extracted_2/
+links_extracted_3/
+*.docx
