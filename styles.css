@@ -161,15 +161,17 @@ img {
 }
 
 .circle-border {
-  width: 100px;
-  height: 100px;
-  padding: 4px;
+  width: 105px;
+  height: 105px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-amber), var(--accent-cyan));
-  animation: spin 0.8s linear infinite;
+  background: conic-gradient(from 0deg, #ff5500, #f59e0b, #0284c7, #e11d48, #ff5500);
+  animation: spin 1.2s linear infinite;
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.4), 0 0 35px rgba(2, 132, 199, 0.3);
+  position: relative;
 }
 
 .circle-core {
@@ -180,9 +182,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-orange);
-  font-size: 2rem;
   overflow: hidden;
+  position: relative;
+  /* Counter-rotate inner core so logo stays completely static and upright */
+  animation: reverse-spin 1.2s linear infinite;
+  border: 3px solid #ffffff;
 }
 
 .preloader-logo {
@@ -193,7 +197,7 @@ img {
 }
 
 .preloader-text {
-  margin-top: 20px;
+  margin-top: 24px;
   font-family: var(--font-display);
   letter-spacing: 2px;
   font-size: 1.8rem;
@@ -203,6 +207,11 @@ img {
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes reverse-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
 }
 
 /* Navigation Bar */
