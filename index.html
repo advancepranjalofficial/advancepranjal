@@ -58,29 +58,43 @@
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#hero" class="brand-logo">
+      <a href="index.html#hero" class="brand-logo">
         <img src="assets/ap_logo.jpg" alt="Advance Pranjal Logo">
         <span class="brand-title">ADVANCE <span>PRANJAL</span></span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#what-i-do">What I Do</a></li>
-        <li><a href="#professional-profile">Profile</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#learn">Learn</a></li>
-        <li><a href="#featured">Videos</a></li>
-        <li><a href="#social-feed">Social</a></li>
-        <li><a href="#makerhive" class="nav-btn-outline"><i class="fa-solid fa-rocket"></i> MakerHive</a></li>
-        <li><a href="#store" class="nav-btn-outline"><i class="fa-solid fa-bag-shopping"></i> AP Shop</a></li>
-        <li><a href="#contact" class="nav-btn"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
-      </ul>
-
-      <div class="mobile-toggle">
-        <i class="fa-solid fa-bars"></i>
+      <!-- Visible Primary Actions (1 or 2 links stay visible) -->
+      <div class="nav-primary-actions">
+        <a href="index.html#hero" class="nav-visible-link active">Home</a>
+        <a href="index.html#learn" class="nav-visible-link">Learn Hub</a>
+        <a href="index.html#contact" class="nav-btn"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+        
+        <!-- Three-Line Menu Button (Hamburguer Menu for all items) -->
+        <button class="menu-toggle-btn mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+          <span class="menu-text">Menu</span>
+        </button>
       </div>
+
+      <!-- Navigation Drawer (Contains all section buttons & pages) -->
+      <ul class="nav-links">
+        <li class="nav-drawer-header">
+          <span>Navigation Menu</span>
+        </li>
+        <li><a href="index.html#hero" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="fa-solid fa-user"></i> About Pranjal</a></li>
+        <li><a href="index.html#what-i-do"><i class="fa-solid fa-briefcase"></i> What I Do</a></li>
+        <li><a href="index.html#professional-profile"><i class="fa-solid fa-id-card"></i> Professional Profile</a></li>
+        <li><a href="index.html#achievements"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+        <li><a href="index.html#projects"><i class="fa-solid fa-diagram-project"></i> Featured Projects</a></li>
+        <li><a href="index.html#learn"><i class="fa-solid fa-book-open"></i> Learn Robotics & AI</a></li>
+        <li><a href="index.html#featured"><i class="fa-brands fa-youtube"></i> Watch & Learn Videos</a></li>
+        <li><a href="index.html#social-feed"><i class="fa-solid fa-comments"></i> Social Highlights</a></li>
+        <li><a href="makerhive.html" class="nav-drawer-highlight"><i class="fa-solid fa-rocket"></i> Sparkbee MakerHive Page</a></li>
+        <li><a href="index.html#store" class="nav-drawer-highlight"><i class="fa-solid fa-bag-shopping"></i> AP Shop</a></li>
+        <li><a href="index.html#support" class="nav-drawer-highlight"><i class="fa-solid fa-heart"></i> Support Creator</a></li>
+        <li><a href="index.html#contact" class="nav-btn" style="justify-content: center; width: 100%; margin-top: 10px;"><i class="fa-solid fa-paper-plane"></i> Contact Me</a></li>
+      </ul>
     </div>
   </nav>
 
