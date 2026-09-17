@@ -1485,9 +1485,46 @@ footer {
   font-weight: 600;
 }
 
+/* Sparkbee MakerHive Page Specific Layout Styles */
+.makerhive-card-container {
+  background: #ffffff;
+  border: 3px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+  padding: 44px;
+  overflow: hidden;
+}
+
+.makerhive-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.makerhive-image-col {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.makerhive-image-col img {
+  max-width: 100%;
+  max-height: 480px;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--border-dark);
+  box-shadow: var(--shadow-md);
+  object-fit: contain;
+}
+
 /* Mobile & Tablet Responsive Breakpoints */
 @media (max-width: 1024px) {
-  .hero-container, .about-card-wrapper {
+  .hero-container, .about-card-wrapper, .makerhive-card-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -1540,7 +1577,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .video-showcase-grid, .feed-grid, .store-grid, .connect-container, .projects-grid {
+  .video-showcase-grid, .feed-grid, .store-grid, .connect-container, .projects-grid, .makerhive-features-grid {
     grid-template-columns: 1fr;
   }
 
