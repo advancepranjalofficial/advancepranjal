@@ -262,6 +262,8 @@ img {
 
 .brand-title span {
   color: var(--accent-orange);
+}
+
 .nav-primary-actions {
   display: flex;
   align-items: center;
