@@ -1577,7 +1577,7 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .video-showcase-grid, .feed-grid, .store-grid, .connect-container, .projects-grid, .makerhive-features-grid {
+  .video-showcase-grid, .feed-grid, .store-grid, .connect-container, .projects-grid, .makerhive-features-grid, .contact-page-grid {
     grid-template-columns: 1fr;
   }
 
