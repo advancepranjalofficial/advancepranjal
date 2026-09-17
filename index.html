@@ -43,8 +43,13 @@
   <div class="bg-glow-1"></div>
   <div class="bg-glow-2"></div>
 
-  <!-- Preloader Screen -->
+  <!-- Preloader Screen (Animated Futuristic Tech Studio) -->
   <div id="preloader">
+    <div class="preloader-bg-glow"></div>
+    <div class="preloader-particles">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    
     <div class="spinner-box">
       <div class="circle-border">
         <div class="circle-core">
@@ -52,7 +57,13 @@
         </div>
       </div>
     </div>
-    <div class="preloader-text">Loading Pranjal Kalita | Advance Pranjal...</div>
+    
+    <div class="preloader-text-box">
+      <span id="preloaderTypedText" class="typed-text"></span><span class="typing-cursor">|</span>
+    </div>
+    <div class="preloader-progress-bar">
+      <div class="preloader-progress-fill"></div>
+    </div>
   </div>
 
   <!-- Navigation Bar -->
@@ -137,12 +148,12 @@
 
       <div class="hero-card-preview">
         <div class="hero-avatar-wrapper">
-          <img src="assets/ap_logo.jpg" alt="Pranjal Kalita Profile">
+          <img src="assets/pranjal.jpeg" alt="Pranjal Kalita Profile">
         </div>
         <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 4px; color: var(--border-dark);">Pranjal Kalita</h3>
         <p style="color: var(--accent-orange); font-size: 0.92rem; font-weight: 800; margin-bottom: 10px;">Computer Science M.Sc. Postgraduate</p>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 16px; line-height: 1.5;">
-          Robotics Educator, STEM Mentor & Tech Creator based in Assam, India. 4+ years of mentoring, 50K+ YouTube Subscribers, 200K+ Instagram Followers.
+          Robotics Educator, STEM Mentor & Tech Creator based in Assam, India. 5+ years of mentoring, 50K+ YouTube Subscribers, 200K+ Instagram Followers.
         </p>
         
         <div class="tech-tags">
@@ -150,6 +161,7 @@
           <span class="tech-tag"><i class="fa-solid fa-wifi"></i> ESP32/ESP8266</span>
           <span class="tech-tag"><i class="fa-solid fa-robot"></i> Robotics</span>
           <span class="tech-tag"><i class="fa-solid fa-brain"></i> Generative AI</span>
+          <span class="tech-tag"><i class="fa-solid fa-internet"></i> IoT</span>
         </div>
       </div>
     </div>
@@ -175,27 +187,27 @@
             <strong>Pranjal Kalita</strong> is a Computer Science postgraduate (M.Sc., Gauhati University) and robotics/electronics educator based in Assam, India.
           </p>
           <p class="about-paragraph">
-            Over the past 4+ years, Pranjal has combined academic computer science with practical physical hardware to mentor students, conduct STEM workshops across 10+ schools and educational institutions, build innovative technology prototypes, and create accessible engineering content for over 250,000+ total followers across YouTube and Instagram.
+            Over the past 5+ years, Pranjal has combined academic computer science with practical physical hardware to mentor students, conduct STEM workshops across 10+ schools and educational institutions, build innovative technology prototypes, and create accessible engineering content for over 250,000+ total followers across YouTube and Instagram.
           </p>
 
           <div class="about-journey-grid">
             <div class="journey-badge"><i class="fa-solid fa-graduation-cap"></i> M.Sc. Computer Science (2024-2026)</div>
             <div class="journey-badge"><i class="fa-solid fa-university"></i> B.Sc. Computer Science (2021-2024)</div>
             <div class="journey-badge"><i class="fa-solid fa-robot"></i> Robotics & Embedded Systems</div>
-            <div class="journey-badge"><i class="fa-solid fa-chalkboard-user"></i> STEM Teaching (4+ Years)</div>
+            <div class="journey-badge"><i class="fa-solid fa-chalkboard-user"></i> STEM Teaching (5+ Years)</div>
             <div class="journey-badge"><i class="fa-solid fa-video"></i> Digital Media & Content Creation</div>
             <div class="journey-badge"><i class="fa-solid fa-brain"></i> Generative AI & Vibe Coding</div>
           </div>
 
           <div class="public-info-box">
             <div class="info-item"><i class="fa-solid fa-user-check"></i> <span><strong>Name:</strong> Pranjal Kalita</span></div>
-            <div class="info-item"><i class="fa-solid fa-location-dot"></i> <span><strong>Based in:</strong> Sualkuchi, Assam – 781103, India</span></div>
-            <div class="info-item"><i class="fa-solid fa-graduation-cap"></i> <span><strong>Academic History:</strong> M.Sc. Computer Science (Gauhati University, CGPA: 6.97) | B.Sc. CS (LCB College, CGPA: 6.96)</span></div>
+            <div class="info-item"><i class="fa-solid fa-location-dot"></i> <span><strong>Based in:</strong> Assam , India</span></div>
+            <div class="info-item"><i class="fa-solid fa-graduation-cap"></i> <span><strong>Academic History:</strong> M.Sc. Computer Science From Gauhati University | B.Sc. Computer Science From LCB College </span></div>
           </div>
         </div>
 
         <div class="about-image-col">
-          <img src="assets/ap_logo.jpg" alt="Pranjal Kalita Profile Picture" class="about-avatar-img">
+          <img src="assets/PranjalKalita.jpeg" alt="Pranjal Kalita Profile Picture" class="about-avatar-img">
           <div class="about-quote-card">
             <i class="fa-solid fa-quote-left quote-icon"></i>
             <p>"My goal is to make robotics, electronics, and AI learning simple and accessible through practical, hands-on guided projects."</p>
@@ -282,7 +294,7 @@
         <div class="beyond-card">
           <i class="fa-solid fa-file-pdf beyond-icon" style="color: var(--accent-pink);"></i>
           <h3>Resume / CV</h3>
-          <p>Detailed summary of Computer Science M.Sc. degree, 4+ years teaching experience, and achievements.</p>
+          <p>Detailed summary of Computer Science M.Sc. degree, 5+ years teaching experience, and achievements.</p>
           <a href="mailto:contact.to.advance@gmail.com?subject=Requesting%20Pranjal%20Kalita%20Resume" class="btn-primary" style="background: var(--accent-pink); font-size: 0.88rem; padding: 10px 20px;">
             Request CV <i class="fa-solid fa-envelope"></i>
           </a>
@@ -512,7 +524,7 @@
             <div class="feed-user">
               <img src="assets/ap_logo.jpg" alt="AdvancePranjal Avatar">
               <div>
-                <h5>Advance Pranjal / Pranjal Kalita</h5>
+                <h5>Advance Pranjal </h5>
                 <span>LinkedIn • Professional Highlight</span>
               </div>
             </div>
@@ -521,7 +533,7 @@
           <div class="feed-content">
             <div class="feed-preview-box" style="text-align: left; padding: 20px;">
               <h4 style="font-family: var(--font-heading); color: var(--accent-orange); margin-bottom: 8px; font-size: 1.05rem;">
-                <i class="fa-solid fa-lightbulb"></i> Idea4India (Intel Supported) & IIT Guwahati
+                <i class="fa-solid fa-lightbulb"></i> IdeatForIndia (Intel Supported) & IIT Guwahati
               </h4>
               <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 12px; line-height: 1.5;">
                 "Participating in Idea4India (supported by Intel) and conducting Generative AI workshops at IIT Guwahati inspired me to empower young minds in STEM, Robotics & IoT."
@@ -529,7 +541,7 @@
             </div>
           </div>
           <div class="feed-footer">
-            <a href="https://www.linkedin.com/in/pranjallkalitaa/" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px; background: #0a66c2;">
+            <a href="https://www.linkedin.com/company/advancepranjal/" target="_blank" rel="noopener" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px; background: #0a66c2;">
               <i class="fa-brands fa-linkedin"></i> Read on LinkedIn Profile
             </a>
           </div>

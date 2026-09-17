@@ -9,21 +9,19 @@ window.AP_CONFIG = {
     subheadline: "Robotics • Electronics • Embedded Systems • IoT • AI",
     bioDescription: "Advance Pranjal is my personal technology platform where I build, teach and share Robotics, Electronics, IoT, Embedded Systems and AI.",
     aboutHeading: "Who is Pranjal?",
-    aboutBio: "Pranjal Kalita is a Computer Science postgraduate (M.Sc., Gauhati University) and robotics/electronics educator based in Assam, India. Over the past 4+ years, Pranjal has combined academic computer science with physical hardware to mentor students, build innovative prototypes, and create accessible engineering content across YouTube, Instagram, and practical bootcamps.",
+    aboutBio: "Pranjal Kalita is a Computer Science postgraduate (M.Sc., Gauhati University) and robotics/electronics educator based in Assam, India. Over the past 5+ years, Pranjal has combined academic computer science with physical hardware to mentor students, build innovative prototypes, and create accessible engineering content across YouTube, Instagram, and practical bootcamps.",
     email: "contact.to.advance@gmail.com",
-    location: "Sualkuchi, Assam, India",
+    location: "Assam, India",
     education: [
       { 
         degree: "M.Sc. in Computer Science", 
         institution: "Gauhati University, Guwahati, Assam", 
         period: "2024 – 2026",
-        score: "CGPA: 6.97"
       },
       { 
         degree: "B.Sc. in Computer Science", 
         institution: "Lalit Chandra Bharali (LCB) College, Maligaon, Guwahati", 
         period: "2021 – 2024",
-        score: "CGPA: 6.96"
       }
     ],
     avatar: "assets/ap_logo.jpg",
@@ -31,7 +29,7 @@ window.AP_CONFIG = {
   },
   
   stats: [
-    { value: "4+ Years", label: "Mentoring & STEM Workshops" },
+    { value: "5+ Years", label: "Mentoring & STEM Workshops" },
     { value: "10+", label: "Schools & Institutions Reached" },
     { value: "50,000+", label: "YouTube Subscribers" },
     { value: "200,000+", label: "Instagram Followers" },
@@ -78,7 +76,7 @@ window.AP_CONFIG = {
     },
     {
       year: "2021",
-      title: "Idea4India Innovation Challenge",
+      title: "IdeatForIndia Innovation Challenge",
       venue: "Nationwide Challenge (Supported by Intel)",
       result: "Regional Level Selection",
       description: "Selected for the Regional Level of a nationwide innovation challenge supported by Intel for hardware & IoT prototype solutions."
@@ -107,16 +105,6 @@ window.AP_CONFIG = {
   ],
 
   projects: [
-    {
-      id: "wasteturn",
-      title: "WasteTurn - Smart Waste Management Platform",
-      category: "IoT",
-      description: "Smart waste management platform utilizing sensor-monitored smart bins and IoT telemetry for optimized collection routes.",
-      technologies: ["ESP8266", "IoT", "Sensors", "C++", "Cloud API"],
-      image: "assets/electronics_workshop_class.jpg",
-      github: "https://github.com/advancepranjalofficial",
-      featured: true
-    },
     {
       id: "krishiscan",
       title: "KrishiScan - AI Plant Disease Detector",

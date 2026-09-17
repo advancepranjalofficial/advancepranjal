@@ -7,15 +7,87 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // 1. Preloader Logic
+  // 1. Interactive Typewriter Preloader & Progress Bar Logic
   const preloader = document.getElementById('preloader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      if (preloader) {
-        preloader.style.opacity = '0';
-        preloader.style.visibility = 'hidden';
+  const typedTextEl = document.getElementById('preloaderTypedText');
+  const progressFill = document.querySelector('.preloader-progress-fill');
+
+  const phrases = [
+    "INITIALIZING ROBOTICS...",
+    "LOADING ARDUINO DRIVERS...",
+    "CONNECTING SENSORS & IoT...",
+    "COMPILING EMBEDDED C++...",
+    "WELCOME TO ADVANCE PRANJAL 🚀"
+  ];
+
+  let phraseIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+  let typingSpeed = 60;
+  let progressPercent = 0;
+  let isPageLoaded = false;
+
+  // Smooth progress bar increment
+  const progressInterval = setInterval(() => {
+    if (!isPageLoaded) {
+      if (progressPercent < 85) {
+        progressPercent += Math.floor(Math.random() * 8) + 3;
+        if (progressPercent > 85) progressPercent = 85;
       }
-    }, 400);
+    } else {
+      progressPercent += 10;
+      if (progressPercent >= 100) {
+        progressPercent = 100;
+        clearInterval(progressInterval);
+      }
+    }
+    if (progressFill) {
+      progressFill.style.width = progressPercent + '%';
+    }
+  }, 100);
+
+  function typeStep() {
+    if (!typedTextEl) return;
+    const currentPhrase = phrases[phraseIdx];
+
+    if (!isDeleting) {
+      typedTextEl.textContent = currentPhrase.substring(0, charIdx + 1);
+      charIdx++;
+      if (charIdx === currentPhrase.length) {
+        if (phraseIdx === phrases.length - 1 && isPageLoaded) {
+          // Finished final phrase and window loaded
+          return;
+        }
+        isDeleting = true;
+        setTimeout(typeStep, 900);
+        return;
+      }
+    } else {
+      typedTextEl.textContent = currentPhrase.substring(0, charIdx - 1);
+      charIdx--;
+      if (charIdx === 0) {
+        isDeleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+      }
+    }
+
+    const nextSpeed = isDeleting ? 30 : typingSpeed;
+    setTimeout(typeStep, nextSpeed);
+  }
+
+  typeStep();
+
+  window.addEventListener('load', () => {
+    isPageLoaded = true;
+    setTimeout(() => {
+      if (progressFill) progressFill.style.width = '100%';
+      setTimeout(() => {
+        if (preloader) {
+          preloader.style.opacity = '0';
+          preloader.style.visibility = 'hidden';
+        }
+      }, 500);
+    }, 600);
   });
 
   // 2. Sticky Navbar Effect
