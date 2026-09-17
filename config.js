@@ -56,7 +56,7 @@ window.AP_CONFIG = {
     programming: ["C", "C++", "Python", "Arduino Programming", "Basic Web Development", "HTML/CSS/JS"],
     hardware: ["Arduino (UNO/Nano)", "ESP32", "ESP8266", "Sensors & Actuators", "Embedded Systems", "IoT", "Circuit Design"],
     ai: ["Generative AI", "AI-assisted Development", "AI Image Generation", "AI Video Generation", "AI Audio/Music Generation", "AI Agents", "Prompt Workflows", "Computer Vision", "Vibe Coding"],
-    creative: ["Canva", "PicsArt", "CapCut", "VN Editor", "DaVinci Resolve", "OBS Studio"]
+    creative: ["Video Editing", "Canva", "PicsArt", "CapCut", "VN Editor", "DaVinci Resolve", "Adobe Premiere Pro", "OBS Studio"]
   },
 
   achievements: [
