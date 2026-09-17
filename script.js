@@ -54,9 +54,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Scroll Active Navigation Link Highlight
+  // 4. Scroll Active Navigation Link Highlight & Smooth Reveal Animations
   const sections = document.querySelectorAll('section, header');
   const navItems = document.querySelectorAll('.nav-links a');
+
+  sections.forEach(sec => sec.classList.add('reveal-on-scroll'));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(sec => revealObserver.observe(sec));
 
   window.addEventListener('scroll', () => {
     let current = '';

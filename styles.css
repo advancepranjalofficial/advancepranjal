@@ -420,10 +420,20 @@ img {
 }
 
 .mobile-toggle {
-  display: none;
-  font-size: 1.7rem;
-  color: var(--text-main);
+  display: inline-flex;
   cursor: pointer;
+}
+
+/* Subtle Scroll Reveal Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Sections & Layout */
@@ -1417,24 +1427,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: calc(var(--nav-height) + var(--ticker-height));
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - var(--nav-height) - var(--ticker-height));
-    background: #ffffff;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.3s ease;
-  }
-
-  .nav-links.active {
-    left: 0;
-  }
-
   .mobile-toggle {
-    display: block;
+    display: inline-flex;
   }
 
   .hero-title {
